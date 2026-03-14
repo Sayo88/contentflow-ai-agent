@@ -21,7 +21,8 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-api_key = st.secrets.get("api_key", "sk-iigllefjxvdlxxczcsjvgobxpnpnucvxfyfmxjxqvrdqnkcg")  # 🚨填入你的真实密钥
+# 尝试从系统环境变量/保险箱读取，如果找不到就给个假字符串
+api_key = st.secrets.get("api_key", "请在系统配置中填入你的API_KEY")
 base_url = "https://api.siliconflow.cn/v1"
 model_name = "Qwen/Qwen2.5-7B-Instruct"
 
