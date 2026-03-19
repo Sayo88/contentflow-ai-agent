@@ -44,14 +44,14 @@ pip install -r requirements.txt
 
 # 主力供应商：硅基流动 (SiliconFlow) 或其他 OpenAI 兼容源
 api_key = "sk-你的真实API_KEY"
-base_url = "[https://api.siliconflow.cn/v1](https://api.siliconflow.cn/v1)"
+base_url = "https://api.siliconflow.cn/v1"
 
 # 备用供应商：全能中转站
 proxy_api_key = "sk-你的备用API_KEY"
 proxy_base_url = "https://你的中转站URL/v1"
 
 # 自动化分发 Webhook (Make.com 等)
-MAKE_WEBHOOK_URL = "[https://hook.us2.make.com/你的真实WebhookID](https://hook.us2.make.com/你的真实WebhookID)"
+MAKE_WEBHOOK_URL = "https://hook.us2.make.com/你的真实WebhookID"
 ```
 
 #### 4. 本地运行
