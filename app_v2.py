@@ -861,7 +861,7 @@ elif selected_page == "📥 待办审核":
                                 }
                                 
                                 # 2. 向你的 Webhook 中枢发送真实的 POST 请求
-                                webhook_url = "https://hook.us2.make.com/f3vw3ng7f936ks8rhoe9wyr0ahjrpitf" # 替换成你申请的真实 URL
+                                webhook_url = st.secrets.get("MAKE_WEBHOOK_URL") # 替换成你申请的真实 URL
                                 
                                 try:
                                     # 🚀 真枪实弹：向你的 Webhook 发送真实的 POST 请求！
@@ -1200,7 +1200,7 @@ elif selected_page == "📥 待办审核":
                         else:
                             with st.spinner("🚀 正在通过 Webhook 批量分发视频资产..."):
                                 _project_name = st.session_state.get("project_name", "未命名项目")
-                                webhook_url = "https://hook.us2.make.com/f3vw3ng7f936ks8rhoe9wyr0ahjrpitf"
+                                webhook_url = st.secrets.get("MAKE_WEBHOOK_URL")
                                 import requests
                                 
                                 success_count = 0
